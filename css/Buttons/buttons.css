@@ -1,0 +1,35 @@
+/* BUTTONS */
+.btn {
+  background-color: none;
+  border: 3px solid var(--highlight-color);
+  color: var(--highlight-color);
+  display: inline-block;
+  font-weight: var(--font-semi);
+  letter-spacing: 2px;
+  overflow: hidden;
+  padding: 0.75rem 2.5rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: #fff;
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+.btn::before {
+  background-color: var(--highlight-color);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  height: 0;
+  width: 100%;
+  z-index: var(--z-back);
+}
+
+.btn:hover::before {
+  height: 100%;
+}

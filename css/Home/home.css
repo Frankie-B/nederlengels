@@ -1,0 +1,38 @@
+/* HOME */
+.home {
+  height: calc(100vh - 3rem);
+  row-gap: 1rem;
+}
+
+span {
+  display: inline-block;
+}
+
+span:hover {
+  color: var(--highlight-color);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+span.m-left {
+  margin-left: -10px;
+}
+
+.spacer-right {
+  margin-right: var(--mb-2);
+}
+
+.home-data {
+  align-self: center;
+}
+
+.home-title {
+  color: #000;
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-2);
+}
+
+.home-data p {
+  color: var(--background-color);
+  margin-bottom: var(--mb-4);
+}
